@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="logo">
-        Device
+        <img src="./img/logo-bw.png" alt="Логотип"> 
       </div>
       <input type="text" class="navigation" placeholder="Поиск по сайту">
       <div class="enter">Войти</div>
@@ -17,101 +17,197 @@
       <div class="basket">Корзина</div>
       <nav class="site-navigation">
         <ul class="site-navigation-list">
-          <li class="site-navigation-list-item-1">
+          <li class="navigation-list__catalogue">
             Каталог товаров
+            <div class="list">+</div>
+            <ul>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптер</a>
+              </li>  
+            </ul>
           </li>
-          <li class="site-navigation-list-item-2">
-            Доставка
+          <li class="navigation-list__delivery">
+            <a href="#">Доставка</a>
           </li>
-          <li class="site-navigation-list-item-3">
-            Контакты
+          <li class="navigation-list__contacts">
+            <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     
     <main>
-      <section class="assortment">
-        <div class="main-left">
-          <img src="./img/selfy-stick.png" alt="Длинная палка для селфи">
+      <section class="slider">
+        <div class="slide-1">
+          <div class="left">
+            <img src="./img/selfy-stick.png" alt="Длинная палка для селфи">
+          </div>
+          <div class="right">
+            <div class="selfy-sticks">
+              <div class="slogan">
+                Делай селфи, как Бен Стиллер
+              </div>
+              <div class="number">
+                01
+              </div>
+              <div class="desc">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восеми, Карл!) метров длиной и весом всего 5 килограмм.
+              </div>
+              <div class="details">
+                Подробнее
+              </div>
+              <div class="slider-bullets">
+                #
+              </div>
+              <div class="info">
+                <div class="info__main">
+                  8,5 м
+                </div>
+                <div class="info__text">
+                  Длина палки
+                </div>
+                <div class="info__main">
+                  5 кг
+                </div>
+                <div class="info__text">
+                  Вес палки
+                </div>
+                <div class="info__main">
+                  Карбон
+                </div>
+                <div class="info__text">
+                  Материал
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="main-right">
-          <div class="slogan">
-            Делай селфи, как Бен Стиллер
+        <div class="slide-2">
+          <div class="left">
+            <img src="./img/fitness-bracelet.png" alt="Фитнес-браслет">
           </div>
-          <div class="one">
-            01
-          </div>
-          <div class="desc">
-            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восеми, Карл!) метров длиной и весом всего 5 килограмм.
-          </div>
-          <div class="details">
-            Подробнее
-          </div>
-          <div class="slider-bullets">
-            #
-          </div>
-          <div class="info">
-            <div class="info__main">
-              8,5 м
-            </div>
-            <div class="info__text">
-              Длина палки
-            </div>
-            <div class="info__main">
-              5 кг
-            </div>
-            <div class="info__text">
-              Вес палки
-            </div>
-            <div class="info__main">
-              Карбон
-            </div>
-            <div class="info__text">
-              Материал
+          <div class="right">
+            <div class="fitness-bracelets">
+              <div class="slogan">
+                Худеем правильно
+              </div>
+              <div class="number">
+                02
+              </div>
+              <div class="desc">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+              </div>
+              <div class="details">
+                Подробнее
+              </div>
+              <div class="slider-bullets">
+                #
+              </div>
+              <div class="info">
+                <div class="info__main">
+                  48 часов
+                </div>
+                <div class="info__text">
+                  Без подзарядки
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="goods">
-          <ul class="goods-list">
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Виртуальная реальность
+        <div class="slide-3">  
+          <div class="left">
+            <img src="./img/quadrocopter.png" alt="Фитнес-браслет">
+          </div>
+          <div class="right">
+            <div class="quadrocopters">
+              <div class="slogan">
+                Порхает как бабочка, жалит как пчела!
               </div>
-            </li>
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Моноподы для селфи
+              <div class="number">
+                03
               </div>
-            </li>
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Эшкн камеры
+              <div class="desc">
+                Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.
               </div>
-            </li>
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Фитнес-браслеты
+              <div class="details">
+                Подробнее
               </div>
-            </li>
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Умные часы
+              <div class="slider-bullets">
+                #
               </div>
-            </li>
-            <li class="goods-list-item">
-              #
-              <div class="goods-list-item__name">
-                Квадрокоптеры
+              <div class="info">
+                <div class="info__main">
+                  800 м
+                </div>
+                <div class="info__text">
+                  Дальность полёта
+                </div>
+                <div class="info__main">
+                  50 м
+                </div>
+                <div class="info__text">
+                  Радиус поражения
+                </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>  
+        </div>  
+      </section> 
+
+      <section class="goods">
+        <ul class="goods-list">
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Виртуальная реальность
+            </div>
+          </li>
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Моноподы для селфи
+            </div>
+          </li>
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Эшкн камеры
+            </div>
+          </li>
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Фитнес-браслеты
+            </div>
+          </li>
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Умные часы
+            </div>
+          </li>
+          <li class="goods-list-item">
+            <a href="#" class="item__link">#</a>
+            <div class="goods-list-item__name">
+              Квадрокоптеры
+            </div>
+          </li>
+        </ul>
       </section>
       
       <section class="services">
@@ -211,6 +307,16 @@
       </div>
 
     </footer>
+
+    <div class="write-us">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <span class="write-us__close">X</span>
+        <input type="text" placeholder="Имя Фамилия" class="write-us__name" name="name">Ваше имя:
+        <input type="email" placeholder="email@example.com" class="write-us__email" name="email">Ваш e-mail:
+        <textarea placeholder="В свободной форме" name="message" class="write-us__message"></textarea>Текст письма:
+        <button type="submit" class="write-us__submit">Отправить</button>
+      </form>
+    </div>
 
   </body>
 </html>
