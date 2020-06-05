@@ -1,30 +1,30 @@
 /* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
 
 @font-face {
-    font-family: "Gilroy Extra Bold";
-    src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-         url("/fonts/gilroyextrabold.woff") format("woff"); 
-    font-weight: 900;     
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff"); 
+    font-weight: 800;     
 }
 
 @font-face {
-    font-family: "Gilroy Light";
-    src: url("/fonts/gilroylight.woff2") format("woff2"),
-         url("/fonts/gilroylight.woff") format("woff");
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
     font-weight: 300;     
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url("/fonts/opensans.woff2") format("woff2"),
-         url("/fonts/opensans.woff") format("woff");
+    src: url("../fonts/opensans.woff2") format("woff2"),
+         url("../fonts/opensans.woff") format("woff");
     font-weight: 400;     
 }
 
 @font-face {
-    font-family: "Open Sans Light";
-    src: url("/fonts/opensanslight.woff2") format("woff2"),
-         url("/fonts/opensanslight.woff") format("woff");
+    font-family: "Open Sans";
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+         url("../fonts/opensanslight.woff") format("woff");
     font-weight: 300;     
 }
 
@@ -107,8 +107,10 @@ header {
 }
 
 .enter, .exit, .compare, .basket {
-    font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;   
 }
 
 .enter {
@@ -170,7 +172,7 @@ header {
     display: grid;
     grid-template-columns: 473px 560px;
     column-gap: 127px;
-    grid-template-rows: auto, auto;
+    grid-template-rows: auto auto;
 }    
 
 .about__line {
@@ -378,12 +380,14 @@ form {
 /******************************************** СТРАНИЦА КАТАЛОГА *********************************/
 .sticks h2 {
     font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+    font-weight: 800;   
     font-size: 47px;
     color: var(--basic-black);
 }
 
 .breadcrumbs__item a {
-    font-family: "Open Sans Light", Arial, Helvetica, sans-serif; 
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; 
+    font-weight: 300;
     font-size: 14px;
     opacity: 0.3;
     color: var(--basic-black);
@@ -394,14 +398,14 @@ form {
 }
 
 legend {
-    font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: var(--basic-black);
 }
 
 label {
-    font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--basic-black);
