@@ -1,0 +1,287 @@
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+
+@font-face {
+    font-family: "Gilroy Extra Bold";
+    src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
+         url("/fonts/gilroyextrabold.woff") format("woff"); 
+    font-weight: 900;     
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("/fonts/gilroylight.woff2") format("woff2"),
+         url("/fonts/gilroylight.woff") format("woff");
+    font-weight: 300;     
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/opensans.woff2") format("woff2"),
+         url("/fonts/opensans.woff") format("woff");
+    font-weight: 400;     
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("/fonts/opensanslight.woff2") format("woff2"),
+         url("/fonts/opensanslight.woff") format("woff");
+    font-weight: 300;     
+}
+
+/* КАСТОМНЫЕ ЦВЕТА */
+:root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white: #FFFFFF;
+    --basic-grey: #464646;
+    --basic-half-grey: #7E7E7E;
+    --basic-grey-light: #E5E5E5;
+    --special-yellow: #F7E296;
+    --special-green: #91C92F;
+    --special-yellow-dark: #F0C52E;
+}
+
+/* ОБЩИЕ СВОЙСТВА*/
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+aside {
+	padding: 0px;
+	margin: 0px;
+}
+div, p, a, section, form, input, button, textarea {
+	box-sizing: border-box;
+}
+ul, li {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;		
+}
+p, img {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+
+/* ***************************** ГЛАВНАЯ СТРАНИЦА И ШАПКА ***************************************/
+
+header {
+    background-color: var(--special-yellow);
+}
+
+.service-container {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+}
+
+.service {
+    display: flex;
+    align-items: center;
+}
+
+.service__navigation {
+    width: 144px;    
+}
+
+.enter, .exit, .compare, .basket {
+    font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.enter {
+    margin-left: 396px;
+}
+
+.compare {
+    margin-left: 213px;
+}
+
+.basket {
+    margin-left: 44px;
+}
+
+.goods__groups {
+    display: none;
+}
+
+.navigation-list__catalogue,
+.navigation-list__delivery a,
+.navigation-list__contacts a {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(basic--black);
+}
+
+.navigation-list__catalogue {
+    letter-spacing: 0.1em;
+}
+
+.about__line {
+    width: 80px;
+    height: 7px;
+    color: var(basic--black);
+}
+
+.about__us h2,
+.about__contacts h2 {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+    color: var(basic--black);
+}
+
+.about__line_part1,
+.about__line_part2 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(basic--black);
+}
+
+.about__transport li {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about__more {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(basic--black);
+}
+
+.about__contacts p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(basic--black);
+}
+
+.page-footer {
+    background-color: var(--basic-dark);
+}
+
+.address {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.menu__delivery,
+.menu__warranty,
+.menu__contacts {
+    list-style: none;
+}    
+
+.menu__delivery a,
+.menu__warranty a,
+.menu__contacts a {
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.menu__item {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.phone a {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.footer__line {
+    width: 80px;
+    height: 7px;
+    background: #FFC600;
+}
+
+/******************************************** СТРАНИЦА КАТАЛОГА *********************************/
+.sticks h2 {
+    font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+    font-size: 47px;
+    color: var(--basic-black);
+}
+
+.breadcrumbs__item a {
+    font-family: "Open Sans Light", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    opacity: 0.3;
+    color: var(--basic-black);
+}
+
+.filtering {
+    background-color: var(--basic-grey-light);
+}
+
+legend {
+    font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--basic-black);
+}
+
+label {
+    font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--basic-black);
+}
