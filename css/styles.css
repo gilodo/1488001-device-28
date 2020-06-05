@@ -89,7 +89,7 @@ header {
 }
 
 .service-container {
-    width: 1040px;
+    width: 1160px;
     margin: 0 auto;
     padding-top: 44px;
     padding-right: 60px;
@@ -127,8 +127,14 @@ header {
     display: none;
 }
 
+.site-navigation-list {
+    display: flex;
+    margin-top: 50px;
+}
+
 .navigation-list__catalogue,
 .navigation-list__delivery a,
+.navigation-list__warranty a,
 .navigation-list__contacts a {
     font-family: "Gilroy", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -137,17 +143,41 @@ header {
     line-height: 22px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(basic--black);
+    color: var(--basic-black)
 }
 
 .navigation-list__catalogue {
     letter-spacing: 0.1em;
 }
 
+.navigation-list__delivery {
+    margin-left: 349px;
+}
+
+.navigation-list__warranty {
+    margin-left: 38px;
+}
+
+.navigation-list__contacts {
+    margin-left: 111px;
+}
+
+.slider, .goods, .services, .brands {
+    display: none;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 473px 560px;
+    column-gap: 127px;
+    grid-template-rows: auto, auto;
+}    
+
+
 .about__line {
     width: 80px;
     height: 7px;
-    color: var(basic--black);
+    color: var(--basic-black)
 }
 
 .about__us h2,
@@ -158,7 +188,7 @@ header {
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
-    color: var(basic--black);
+    color: var(--basic-black)
 }
 
 .about__line_part1,
@@ -168,7 +198,7 @@ header {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-    color: var(basic--black);
+    color: var(--basic-black)
 }
 
 .about__transport li {
@@ -187,7 +217,7 @@ header {
     line-height: 22px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(basic--black);
+    color: var(--basic-black)
 }
 
 .about__contacts p {
@@ -196,11 +226,19 @@ header {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-    color: var(basic--black);
+    color: var(--basic-black);
 }
 
 .page-footer {
     background-color: var(--basic-dark);
+    width: 1440px;
+    padding: 46px 140px 65px 140px;
+    
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 368px 469px 325px;
 }
 
 .address {
@@ -210,6 +248,11 @@ header {
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-white);
+}
+
+.middle__menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu__delivery,
@@ -228,6 +271,10 @@ header {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--basic-white);
+}
+
+.menu__warranty, .menu__contacts {
+    margin-left: 36px;
 }
 
 .menu__item {
@@ -252,6 +299,22 @@ header {
     width: 80px;
     height: 7px;
     background: #FFC600;
+}
+
+.right__menu {
+    display: flex;
+}
+
+.menu__compare {
+    margin-left: 38px;
+}
+
+.menu__basket {
+    margin-left: 40px;
+}
+
+form {
+    display: none;
 }
 
 /******************************************** СТРАНИЦА КАТАЛОГА *********************************/
