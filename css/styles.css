@@ -191,14 +191,43 @@ header {
 
 .slider,
 .goods,
+.goods-list,
 .services,
 .brands {
   display: none;
 }
 
-.filter {
-  width: 468px;
-  background-color: var(--basic-grey-light);
+fieldset {
+  border: 0px;
+}
+
+.filter__color {
+  margin-top: 215px;
+}
+
+.filter__color legend, 
+.filter__bluetooth legend {
+  margin-bottom: 30px;
+}
+
+.color {
+  margin-bottom: 15px;
+}
+
+.yes {
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  margin-top: 50px;
 }
 
 .about-container {
@@ -448,13 +477,13 @@ header {
 }
 
 /******************************************** СТРАНИЦА КАТАЛОГА *********************************/
-.sticks-inner-container {
-   width: 1160px;
+.catalogue-title {
+   width: 1440px;
    margin: 0 auto;
-   padding-left: 60px;
+   padding: 44px 760px 99px 200px;
 }
 
-.sticks h2 {
+.catalogue-title h2 {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -470,8 +499,28 @@ header {
   color: var(--basic-black);
 }
 
+.goods {
+  width: 1440px;
+  margin: 0 auto; 
+  display: flex;
+}
+
 .filtering {
   background-color: var(--basic-grey-light);
+}
+
+.blackline {
+  width: 200px;
+  height: 2px;
+  background-color: var(--basic-black);
+  margin-bottom: 14px;
+}
+
+.filter {
+  width: 465px;
+  background-color: var(--basic-grey-light);
+  flex-shrink: 0;
+  padding-left: 200px;
 }
 
 legend {
@@ -501,11 +550,7 @@ label {
   display: flex;
 }
 
-.goods-filtering {
-  display: flex;
-}
-
-.models__results-field {
+.models__results-area {
   width: 975px;
   padding: 69px 140px 76px 72px; /* pagination включён*/
 }
@@ -513,7 +558,7 @@ label {
 .models__results {
   display: grid;
   grid-template-columns: 360px 360px;
-  column-gap: 127px;
+  column-gap: 40px;
 }
 
 .model__info {

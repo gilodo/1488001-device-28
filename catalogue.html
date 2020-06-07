@@ -61,144 +61,147 @@
 
         <main>
 
-            <section class="sticks">
-                <div class="sticks-inner-container">
-                    <h2>Моноподы для селфи</h2>
-                    <ul class="breadcrumbs">
-                        <div class="breadcrumbs__item">
-                            <a href="#">Главная ></a>
-                        </div>
-                        <div class="breadcrumbs__item">
-                            <a href="#">Каталог товаров > </a>
-                        </div>
-                        <div class="breadcrumbs__item">
-                            <a href="#">Моноподы для селфи</a>
-                        </div>
-                    </ul>
-                    <div class="goods-filtering">
-                        <div class="filter">
-                            <h3 class="filter__heading">Фильтр:</h3>
-                            <form action="https://echo.htmlacademy.ru" method="GET" class="filtering">
-                                <fieldset class="filter__price">
-                                    <legend>Стоимость</legend>
-                                    <input class="price__range" type="range">от 0 до 5000
-                                </fieldset>
-                                <fieldset class="filter__color">
-                                    <legend>Цвет</legend>
-                                    <ul>
-                                        <li>
-                                            <label>
-                                            <input type="checkbox" class="color__black" name="black" checked>
-                                            Чёрный</label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                            <input type="checkbox" class="color__white" name="white">
-                                            Белый</label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                            <input type="checkbox" class="color__blue" name="blue" checked>
-                                            Синий</label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                            <input type="checkbox" class="color__red" name="red" checked>
-                                            Красный</label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                            <input type="checkbox" class="color__pink" name="pink">
-                                            Розовый</label>
-                                        </li>
-                                    </ul>
-                                </fieldset>
-                                <fieldset class="filter__bluetooth">
-                                    <legend>Bluetooth</legend>
-                                    <ul>
-                                        <li>
-                                            <label>
-                                            <input type="radio" name="bluetooth" value="with_bluetooth" class="yes" checked>
-                                            Есть</label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                            <input type="radio" name="bluetooth" value="no_bluetooth" class="no">
-                                            Нет</label>
-                                        </li>
-                                    </ul>
-                                </fieldset>
-                                <button type="submit">Показать</button>
-                            </form>
-                        </div>
-                        <div class="models">
-                            <div class="models__sort">
-                                <h3>Сортировка:</h3>
-                                <div class="models__price">
-                                    По цене
-                                </div>
-                                <div class="models__type">
-                                    По типу
-                                </div>
-                                <div class="models__popularity">
-                                    По популярности
-                                </div>
-                            </div>
-                            <div class="models__results-field">
-                                <div class="models__results">
-                                    <div class="model">
-                                        <img src="./img/amateur-selfy-stick.jpg" alt="Любительская селфи-палка">
-                                        <div class="model__info model-1">
-                                            <div class="model__name name-1">
-                                                Любительская селфи-палка
-                                            </div>
-                                            <div class="model__price">500 руб.</div>
-                                        </div>
-                                    </div>
-                                    <div class="model">
-                                        <img src="./img/professional-selfy-stick.jpg" alt="Профессиональная селфи-палка">
-                                        <div class="model__info model-2">
-                                            <div class="model__name name-2">
-                                                Профессиональная селфи-палка
-                                            </div>
-                                            <div class="model__price">1 500 руб.</div>
-                                        </div>
+            <section class="catalogue-title">
+                <h2>Моноподы для селфи</h2>
+                <ul class="breadcrumbs">
+                    <div class="breadcrumbs__item">
+                        <a href="#">Главная ></a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a href="#">Каталог товаров > </a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a href="#">Моноподы для селфи</a>
+                    </div>
+                </ul>
+            </section>        
 
+            <section class="goods">
+                <div class="filter">
+                    <h3 class="filter__heading">Фильтр:</h3>
+                    <form action="https://echo.htmlacademy.ru" method="GET" class="filtering">
+                        <fieldset class="filter__price">
+                            <legend>Стоимость</legend>
+                            <input class="price__range" type="range">от 0 до 5000
+                        </fieldset>
+                        <div class="blackline"></div>
+                        <fieldset class="filter__color">
+                            <legend>Цвет</legend>
+                            <ul>
+                                <li class="color">
+                                    <label>
+                                    <input type="checkbox" class="color__black" name="black" checked>
+                                    Чёрный</label>
+                                </li>
+                                <li class="color">
+                                    <label>
+                                    <input type="checkbox" class="color__white" name="white">
+                                    Белый</label>
+                                </li>
+                                <li class="color">
+                                    <label>
+                                    <input type="checkbox" class="color__blue" name="blue" checked>
+                                    Синий</label>
+                                </li>
+                                <li class="color">
+                                    <label>
+                                    <input type="checkbox" class="color__red" name="red" checked>
+                                    Красный</label>
+                                </li>
+                                <li class="color">
+                                    <label>
+                                    <input type="checkbox" class="color__pink" name="pink">
+                                    Розовый</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="blackline"></div>
+                        <fieldset class="filter__bluetooth">
+                            <legend>Bluetooth</legend>
+                            <ul>
+                                <li>
+                                    <label>
+                                    <input type="radio" name="bluetooth" value="with_bluetooth" class="yes" checked>
+                                    Есть</label>
+                                </li>
+                                <li>
+                                    <label>
+                                    <input type="radio" name="bluetooth" value="no_bluetooth" class="no">
+                                    Нет</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button type="submit">Показать</button>
+                    </form>
+                </div>
+                <div class="models">
+                    <div class="models__sort">
+                        <h3>Сортировка:</h3>
+                        <div class="models__price">
+                            По цене
+                        </div>
+                        <div class="models__type">
+                            По типу
+                        </div>
+                        <div class="models__popularity">
+                            По популярности
+                        </div>
+                    </div>
+                    <div class="models__results-area">
+                        <div class="models__results">
+                            <div class="model">
+                                <img src="./img/amateur-selfy-stick.jpg" alt="Любительская селфи-палка">
+                                <div class="model__info model-1">
+                                    <div class="model__name name-1">
+                                        Любительская селфи-палка
                                     </div>
-                                    <div class="model">
-                                        <img src="./img/unsinkable-selfy-stick.jpg" alt="Непотопляемая селфи-палка">
-                                        <div class="model__info model-3">
-                                            <div class="model__name name-3">
-                                                Непотопляемая селфи-палка
-                                            </div>
-                                            <div class="model__price">2 500 руб.</div> 
-                                        </div>                               </div>
-                                    <div class="model">
-                                        <img src="./img/follow-me-selfy-stick.jpg" alt="Селфи-палка \"Следуй за мной\"">
-                                        <div class="model__info model-4">
-                                            <div class="model__name name-4">
-                                                Селфи-палка "Следуй за мной"
-                                            </div>
-                                            <div class="model__price"> 4 900 руб.</div>
-                                        </div>
+                                    <div class="model__price">500 руб.</div>
+                                </div>
+                            </div>
+                            <div class="model">
+                                <img src="./img/professional-selfy-stick.jpg" alt="Профессиональная селфи-палка">
+                                <div class="model__info model-2">
+                                    <div class="model__name name-2">
+                                        Профессиональная селфи-палка
                                     </div>
+                                    <div class="model__price">1 500 руб.</div>
+                                </div>
+
+                            </div>
+                            <div class="model">
+                                <img src="./img/unsinkable-selfy-stick.jpg" alt="Непотопляемая селфи-палка">
+                                <div class="model__info model-3">
+                                    <div class="model__name name-3">
+                                        Непотопляемая селфи-палка
+                                    </div>
+                                    <div class="model__price">2 500 руб.</div> 
+                                </div>                               </div>
+                            <div class="model">
+                                <img src="./img/follow-me-selfy-stick.jpg" alt="Селфи-палка \"Следуй за мной\"">
+                                <div class="model__info model-4">
+                                    <div class="model__name name-4">
+                                        Селфи-палка "Следуй за мной"
+                                    </div>
+                                    <div class="model__price"> 4 900 руб.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="pagination">
-                            <div class="pagination__back">
-                                Назад
-                            </div>
-                            <div class="page active" >1</div>
-                            <div class="page">2</div>
-                            <div class="page">3</div>
-                            <div class="pagination__forward">
-                                Вперёд
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+                <div class="pagination">
+                    <div class="pagination__back">
+                        Назад
+                    </div>
+                    <div class="page active" >1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                    <div class="pagination__forward">
+                        Вперёд
+                    </div>
+                </div>
+
+                    
+                
             </section>
 
         </main>
