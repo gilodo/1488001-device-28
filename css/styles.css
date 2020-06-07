@@ -196,6 +196,11 @@ header {
   display: none;
 }
 
+.filter {
+  width: 468px;
+  background-color: var(--basic-grey-light);
+}
+
 .about-container {
   width: 1160px;
   margin: 0 auto;
@@ -348,11 +353,12 @@ header {
   margin-left: 205px;
 }
 
-.footer___academy {
+.footer__academy {
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 4;
+  padding-left: 168px
 }
 
 .menu__delivery,
