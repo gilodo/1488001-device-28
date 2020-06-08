@@ -122,31 +122,55 @@ header {
   align-items: center;
 }
 
-.search-btn {
+.header__search-field {
   width: 106px;
   margin-left: 22px;
 }
 
-.enter-btn,
-.exit-btn,
-.compare-btn,
-.basket-btn {
+.header__btn {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
-.enter-btn {
-  margin-left: 438px;
+.header__user-btn {
+  margin-left: 11px;
+  white-space: nowrap;  
 }
 
-.compare-btn {
-  margin-left: 238px;
+.header__enter-btn-svg {
+  margin-left: 396px; 
 }
 
-.basket-btn {
-  margin-left: 63px;
+.header__enter-btn {
+  margin-left: 11px;
+}
+
+.header__compare-btn-svg {
+  margin-left: 208px;
+}
+
+.header__compare-btn-svg-2 {
+  margin-left: 59px;
+}
+
+.header__compare-btn {
+  margin-left: 12px;
+}
+
+.header__compare-btn {
+  margin-left: 10px;
+}
+
+.header__basket-btn-svg {
+  margin-left: 41px;
+}
+
+.header__basket-btn {
+  margin-left: 12px;
 }
 
 .goods__groups {
@@ -413,7 +437,7 @@ button {
   margin-left: 36px;
 }
 
-.btn {
+.footer__btn {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -443,27 +467,35 @@ button {
   padding-left: 116px
 }
 
-.btn__user-svg {
-    margin-right: 13px;
+.footer__user-btn-svg {
+  margin-left: 144px;
 }
 
-.btn__exit {
-    margin-left: 10px;
+.footer__user-btn {
+  white-space: nowrap;
 }
 
-.btn__compare-svg {
-  margin-left: 39px;
+.footer__exit-btn {
+  margin-left: 24px;
 }
 
-.btn__compare {
+.footer__enter-btn {
+    margin-left: 11px;
+}
+
+.footer__compare-btn-svg {
+  margin-left: 38px;
+}
+
+.footer__compare-btn {
   margin-left: 11px;
 }
 
-.btn__basket-svg {
-    margin-left: 40px;
+.footer__basket-btn-svg {
+  margin-left: 40px;
 }
 
-.btn__basket {
+.footer__basket-btn {
   margin-left: 12px;
 }
 
@@ -477,6 +509,25 @@ button {
 }
 
 /******************************************** СТРАНИЦА КАТАЛОГА *********************************/
+.header__exit-btn {
+  margin-left: 11px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__compare-btn-2 {
+  margin-left: 12px;
+  color: var(--basic-black);
+}
+
+.header__cart-btn-svg-2 {
+  margin-left: 41px;
+}
+
+.header__basket-btn-2 {
+  margin-left: 12px;
+  color: var(--basic-black);
+}
+
 .catalogue-title {
    width: 1440px;
    margin: 0 auto;
@@ -603,4 +654,8 @@ label {
   font-weight: 300;
   line-height: 18px;
   font-size: 16px;
+}
+
+.footer__user-btn-svg-2 {
+  margin-left: 0;
 }
