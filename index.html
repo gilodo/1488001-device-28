@@ -279,13 +279,13 @@
                 <img src="./img/map.jpg" alt="Карта">
               </div>
 
-              <div class="about__more cell-3">
+              <a href="#" class="strikethrough-btn about__more cell-3">
                   Подробнее о нас
-              </div>
+              </a>
               
-              <div class="about__more cell-4">
+              <a href="#" class="strikethrough-btn about__more cell-4">
                   Напишите нам
-              </div>
+              </a>
 
             </div>
 
@@ -354,15 +354,28 @@
 
       <div class="write-us">
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <span class="write-us__close">X</span>
-          <input type="text" placeholder="Имя Фамилия" class="write-us__name" name="name">Ваше имя:
-          <input type="email" placeholder="email@example.com" class="write-us__email" name="email">Ваш e-mail:
-          <textarea placeholder="В свободной форме" name="message" class="write-us__message"></textarea>Текст письма:
-          <button type="submit" class="write-us__submit">Отправить</button>
+          <button class="write-us__close"></button>
+          <div class="write__us-top">
+            <label class="write-us__name">
+              Ваше имя:
+              <input class="write-us__name-text" type="text" placeholder="Имя Фамилия" name="name">
+            </label>
+            <label class="write-us__email">
+              Ваш e-mail:
+              <input class="write-us__email-text" type="email" placeholder="email@example.com" name="email">
+            </label>
+          </div>
+          <label class="write-us__message">
+            Текст письма:
+          <textarea class="write-us__message-text" placeholder="В свободной форме" name="message" ></textarea>
+          </label>  
+          <button type="submit" class="strikethrough-btn write-us__submit">Отправить</button>
         </form>
       </div>
 
-    
+      <div class="map-visible">
+        <img src="./img/map popup.jpg" alt="Карта">
+      </div>
 
   </body>
 </html>

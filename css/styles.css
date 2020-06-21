@@ -49,11 +49,11 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-header, 
+header,
 footer {
-    padding: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 a {
@@ -104,7 +104,6 @@ img {
   box-sizing: border-box;
 }
 
-
 /* ***************************** ГЛАВНАЯ СТРАНИЦА И ШАПКА ***************************************/
 
 header {
@@ -138,11 +137,11 @@ header {
 
 .header__user-btn {
   margin-left: 11px;
-  white-space: nowrap;  
+  white-space: nowrap;
 }
 
 .header__enter-btn-svg {
-  margin-left: 396px; 
+  margin-left: 396px;
 }
 
 .header__enter-btn {
@@ -229,7 +228,7 @@ fieldset {
   margin-top: 215px;
 }
 
-.filter__color legend, 
+.filter__color legend,
 .filter__bluetooth legend {
   margin-bottom: 30px;
 }
@@ -239,6 +238,7 @@ fieldset {
 }
 
 .yes {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -411,7 +411,7 @@ button {
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 4;
-  padding-left: 168px
+  padding-left: 168px;
 }
 
 .menu__delivery,
@@ -464,7 +464,7 @@ button {
 
 .footer__buttons {
   display: flex;
-  padding-left: 116px
+  padding-left: 116px;
 }
 
 .footer__user-btn-svg {
@@ -480,7 +480,7 @@ button {
 }
 
 .footer__enter-btn {
-    margin-left: 11px;
+  margin-left: 11px;
 }
 
 .footer__compare-btn-svg {
@@ -501,7 +501,7 @@ button {
 
 .socials__instagram,
 .socials__twitter {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .write-us {
@@ -529,9 +529,9 @@ button {
 }
 
 .catalogue-title {
-   width: 1440px;
-   margin: 0 auto;
-   padding: 44px 760px 99px 200px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 44px 760px 99px 200px;
 }
 
 .catalogue-title h2 {
@@ -552,7 +552,7 @@ button {
 
 .goods {
   width: 1440px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
 }
 
@@ -586,6 +586,50 @@ label {
   font-weight: 400;
   font-size: 14px;
   color: var(--basic-black);
+  margin-left: 3px;
+}
+
+.check, .radio {
+  padding-left: 1.2em;
+}
+
+.check__input, .radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -2.2em;
+  width: 27px;
+  height: 24px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.radio {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.radio__btn {
+  position: absolute;
+  margin-left: -2.2em;
+  width: 27px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+}
+
+.radio__input:checked + .radio__btn {
+  background-image: url("../img/radio-on.svg");
 }
 
 .filter__heading,
@@ -658,4 +702,118 @@ label {
 
 .footer__user-btn-svg-2 {
   margin-left: 0;
+}
+
+/******************************* ФОРМА ************************************/
+.write-us {
+  /* display: block; */
+  width: 960px;
+  padding: 92px 100px 69px 100px;
+  border: 1px solid red;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  background-color: var(--basic-white);
+}
+
+.write-us__close {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--special-yellow);
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.write__us-top {
+  display: flex;
+}
+
+.write-us__name,
+.write-us__email,
+.write-us__message {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--basic-black);
+  display: block;
+}
+
+.write-us__name-text,
+.write-us__email-text,
+.write-us__message-text {
+  margin-top: 10px;
+}
+
+.write-us__name {
+  margin-right: 40px;
+}
+
+.write-us__name-text,
+.write-us__email-text,
+.write-us__message-text {
+  display: block;
+}
+
+.write-us__name-text {
+  width: 360px;
+  background-color: #f2f2f2;
+  padding: 17px 20px;
+  border: none;
+  outline: none;
+}
+
+.write-us__email-text {
+  width: 360px;
+  background-color: #f2f2f2;
+  padding: 17px 20px;
+  border: none;
+  outline: none;
+}
+
+.write-us__message {
+  margin-top: 32px;
+}
+
+.write-us__message-text {
+  width: 760px;
+  height: 167px;
+  background-color: #f2f2f2;
+  padding: 17px 20px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.strikethrough-btn {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  padding: 0 35px;
+}
+
+.strikethrough-btn::before {
+  content: "";
+  background-color: var(--special-yellow);
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+/******************************* КАРТА ************************************/
+.map-visible {
+  display: none;
+  width: 560px;
+  border: 1px solid red;
+  position: fixed;
+  top: 300px;
+  left: 500px;
 }
